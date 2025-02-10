@@ -32,7 +32,7 @@ class LocalHttpServerModule(reactContext: ReactApplicationContext) :
         promise.resolve("Server stopped")
     }
 
-    private class SimpleHttpServer(port: Int) : NanoHTTPD(port) {
+    private class SimpleHttpServer(port: Int) : NanoHTTPD("0.0.0.0", port) {
         override fun serve(session: IHTTPSession): Response {
             return newFixedLengthResponse(
                 Response.Status.OK,
