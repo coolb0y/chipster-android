@@ -42,6 +42,7 @@ chipster-android/
 ├── .gitignore               # Files and folders ignored by git
 └── README.md                # Project documentation
 
+```
 
 ---
 
@@ -69,6 +70,7 @@ npx react-native run-android
 5. Run on iOS
 
 npx react-native run-ios
+```
 
 🧰 Tech Stack
 
