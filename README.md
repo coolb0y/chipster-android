@@ -1,97 +1,94 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📱 Chipster Android
 
-# Getting Started
+Chipster Android is a cross-platform mobile application built with **React Native**, designed for real-time device communication and control. The project demonstrates integration between Android, iOS, and browser-based clients — allowing connections and data exchange between them seamlessly.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 🚀 Features
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- ✅ **Cross-Platform:** Works on Android and iOS.
+- 🌐 **Browser Connectivity:** Accepts connections directly from browsers.
+- 🔗 **Real-Time Communication:** Supports live data exchange between devices.
+- ⚙️ **Modular Codebase:** Well-structured `src/` folder for easy feature expansion.
+- 🧩 **TypeScript Support:** Ensures type safety with `tsconfig.json`.
+- 🧪 **Testing Ready:** Includes Jest configuration for unit testing.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
-npm start
+## 📂 Repository Structure
 
-# OR using Yarn
-yarn start
-```
+```bash
+chipster-android/
+├── android/                 # Native Android build code
+├── ios/                     # Native iOS build code
+├── src/                     # Core application source (JS/TS)
+│   ├── components/          # Reusable UI components
+│   ├── screens/             # Main screen components
+│   ├── utils/               # Helpers, constants, and configs
+│   └── services/            # API or connection logic
+├── __tests__/               # Jest unit/integration tests
+├── .bundle/                 # Metro bundler cache
+├── .vs/                     # IDE (Visual Studio / VS Code) configs
+├── app.json                 # React Native app configuration
+├── babel.config.js          # Babel transpiler setup
+├── metro.config.js          # Metro bundler configuration
+├── package.json             # NPM dependencies and scripts
+├── package-lock.json        # Locked dependency versions
+├── tsconfig.json            # TypeScript compiler configuration
+├── .eslintrc.js             # ESLint configuration
+├── .prettierrc.js           # Prettier formatting rules
+├── .watchmanconfig          # File watcher configuration
+├── Gemfile                  # Ruby/Gem dependencies (if used)
+├── .gitignore               # Files and folders ignored by git
+└── README.md                # Project documentation
 
-## Step 2: Build and run your app
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+---
 
-### Android
+## ⚡ Getting Started
 
-```sh
-# Using npm
-npm run android
+### 1. Clone the repository
+```bash
+git clone https://github.com/coolb0y/chipster-android.git
+cd chipster-android
 
-# OR using Yarn
-yarn android
-```
+2. Install dependencies
 
-### iOS
+npm install
+# or
+yarn install
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+3. Start Metro bundler
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+npx react-native start
 
-```sh
-bundle install
-```
+4. Run on Android
 
-Then, and every time you update your native dependencies, run:
+npx react-native run-android
 
-```sh
-bundle exec pod install
-```
+5. Run on iOS
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+npx react-native run-ios
 
-```sh
-# Using npm
-npm run ios
+🧰 Tech Stack
 
-# OR using Yarn
-yarn ios
-```
+    React Native – Cross-platform mobile framework
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+    TypeScript – Type-safe JavaScript
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+    Jest – Unit testing framework
 
-## Step 3: Modify your app
+    ESLint & Prettier – Code linting and formatting
 
-Now that you have successfully run the app, let's make changes!
+    Metro Bundler – React Native build system
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+🧑‍💻 Development Notes
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+    To allow browser connections, make sure network permissions and CORS settings are properly configured.
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+    The connection fix implemented in commit 5c120dc enables accepting requests directly from web clients.
 
-## Congratulations! :tada:
+📄 License
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is open source and available under the MIT License
+.
