@@ -1,7 +1,7 @@
 # 📱 Chipster Android
 
-Chipster Android is a cross-platform mobile application built with **React Native**, designed for real-time device communication and control. The project demonstrates integration between Android, iOS, and browser-based clients — allowing connections and data exchange between them seamlessly.
-
+Chipster Android is a cross-platform mobile application built with **React Native**, 
+You can create a http server running natively on your android.
 ---
 
 ## 🚀 Features
